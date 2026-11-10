@@ -10,7 +10,7 @@ python -m pytest -q                  # 32 tests (13 engine + 9 API + 9 new engin
 python demo.py                       # full pipeline on sample_data/, prints findings
 uvicorn app.main:app --reload        # API docs: http://127.0.0.1:8000/docs
 ```
-**Fastest demo:** open http://127.0.0.1:8000/docs, run `POST /demo/load`, then `GET /knowledge/debt-report`.
+**Fastest demo:** open http://127.0.0.1:8000/, run `POST /demo/load`, then `GET /knowledge/debt-report`.
 
 Manual flow: upload the 4 files in `sample_data/` via `POST /documents/upload`, then `POST /knowledge/extract`, then `GET /knowledge/{entities,graph,evidence,debt-report}`. Add `?export_files=true` to `/knowledge/graph` to write JSON + GraphML to `data/exports/`.
 Optional LLM extraction: `pip install anthropic`, set `ANTHROPIC_API_KEY` and `KNOWBRIDGE_LLM_PROVIDER=anthropic` (never hardcode keys). Falls back to rules per chunk on any error.
