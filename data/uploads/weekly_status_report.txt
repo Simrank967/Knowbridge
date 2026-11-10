@@ -1,0 +1,9 @@
+Campus Parking App Weekly Status Report
+SYNTHETIC TEST DATA - not a real project.
+Date: 2026-10-27
+
+P-201 is completed.
+P-202 is completed.
+P-203 is in progress.
+Decision: We agreed to adopt GraphQL instead of REST for the mobile API because the screens need flexible queries.
+Risk: Sana Qureshi may be unavailable in November.

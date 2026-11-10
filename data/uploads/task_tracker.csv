@@ -1,0 +1,5 @@
+task_id,task,owner,status,due,depends_on,updated
+P-201,Design the parking slot database schema,Arjun Verma,completed,2026-10-20,,2026-10-21
+P-202,Build the slot availability API,Arjun Verma,in progress,2026-10-30,P-201,2026-10-27
+P-203,Build the mobile booking screen,Sana Qureshi,not started,2026-11-05,P-202,2026-10-27
+P-205,Write the QA test plan,,not started,2026-11-08,,2026-09-20
